@@ -310,7 +310,7 @@ export async function init()
     else
     {
         openModal("modal1");
-        if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
         {
             print.style.display = "none";
             openModal("modal2");
